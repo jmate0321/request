@@ -88,7 +88,7 @@ function wrapRequestMethod (method, options, requester, verb) {
     var target = {}
     extend(true, target, options, params)
 
-    target.pool = params.pool || options.pool
+    //target.pool = params.pool || options.pool
 
     if (verb) {
       target.method = (verb === 'del' ? 'DELETE' : verb.toUpperCase())
